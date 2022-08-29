@@ -17,6 +17,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+
+
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
@@ -32,7 +34,7 @@ public class User {
 	@Column(nullable = false, length = 20, unique=true)
 	private String username; // 아이디
 
-	@Column(nullable = false, length = 100)
+	@Column(nullable = false , length = 100)
 	private String password;
 	
 	@Column(nullable = false, length = 50)
